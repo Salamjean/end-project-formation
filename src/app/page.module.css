@@ -1,0 +1,202 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.headerTitle {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #007bff;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.2s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.adminButton {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.adminButton:hover {
+  background-color: #0056b3;
+}
+
+.mainContent {
+  padding: 2rem 0;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.parkingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.parkingCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.parkingCard:hover {
+  transform: translateY(-5px);
+}
+
+.parkingImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+
+.availabilityBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.parkingInfo {
+  padding: 1.5rem;
+}
+
+.parkingName {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.parkingAddress {
+  color: #666;
+  margin: 0 0 0.5rem 0;
+}
+
+.parkingPrice {
+  color: #007bff;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.parkingActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.detailsButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.detailsButton:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.reserveButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--success-color);
+  color: white;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.reserveButton:hover {
+  background-color: var(--success-color-dark);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #dc3545;
+  font-size: 1.2rem;
+} 

@@ -1,0 +1,229 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-color: #1d4ed8;
+}
+
+.headerOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  backdrop-filter: blur(2px);
+}
+
+.headerContent {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.headerTitle {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.headerAddress {
+  color: white;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.infoItem:hover {
+  background: #f1f5f9;
+}
+
+.infoIcon {
+  width: 2rem;
+  height: 2rem;
+  color: #2563eb;
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoLabel {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.infoValue {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.serviceItem:hover {
+  background: #f1f5f9;
+  transform: translateX(4px);
+}
+
+.serviceDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+.serviceText {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.noServices {
+  color: #6b7280;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+
+.description {
+  color: #475569;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.reservationSection {
+  position: sticky;
+  top: 2rem;
+}
+
+.reservationCard {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservationInfo {
+  margin: 1.5rem 0;
+}
+
+.reserveButton {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.reserveButton:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 1023px) {
+  .reservationSection {
+    position: static;
+    margin-top: 2rem;
+  }
+} 

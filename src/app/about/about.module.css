@@ -1,0 +1,248 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/parking-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.heroContent {
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 0;
+}
+
+.sectionContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Story Section */
+.storyContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.storyText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.storyStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat svg {
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.statNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+/* Values Section */
+.valuesSection {
+  background-color: #f8fafc;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.valueIcon {
+  width: 64px;
+  height: 64px;
+  background-color: #e0e7ff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: #2563eb;
+}
+
+.valueTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.valueDescription {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.teamCard {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teamImage {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.teamImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teamName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 1rem 0 0.5rem;
+  padding: 0 1.5rem;
+}
+
+.teamRole {
+  color: #6b7280;
+  padding: 0 1.5rem 1.5rem;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/parking-cta.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+}
+
+.ctaContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ctaButton:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .storyContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .storyStats {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .ctaTitle {
+    font-size: 2rem;
+  }
+} 

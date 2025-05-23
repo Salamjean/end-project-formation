@@ -1,0 +1,129 @@
+.formContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formContainer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.formContainer h2 {
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.formContainer h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formGroup label::before {
+  content: '•';
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.formGroup input {
+  padding: 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.formGroup input:hover {
+  border-color: #cbd5e0;
+  background-color: #fff;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.error {
+  background-color: #fff5f5;
+  color: #e53e3e;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid #feb2b2;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.error::before {
+  content: '⚠️';
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+} 
