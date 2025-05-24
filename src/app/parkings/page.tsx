@@ -68,7 +68,7 @@ export default function ParkingsPage() {
           <div className={styles.searchContainer}>
             <input
               type="text"
-              placeholder="Rechercher par localisation..."
+              placeholder="Rechercher par l'adresse..."
               value={searchLocation}
               onChange={(e) => setSearchLocation(e.target.value)}
               className={styles.searchInput}
@@ -144,7 +144,7 @@ export default function ParkingsPage() {
 
         {filteredParkings.length === 0 && (
           <div className={styles.noResults}>
-            <p>Aucun parking trouvé pour cette localisation.</p>
+            <p>Aucun parking trouvé pour cette adresse.</p>
           </div>
         )}
       </div>
