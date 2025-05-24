@@ -70,12 +70,10 @@ export default function Home() {
                       style={{ objectFit: 'cover' }}
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = '/carousel/agence.jpg';
                       }}
                     />
                   ) : (
                     <Image
-                      src="/carousel/agence.jpg"
                       alt={parking.name}
                       fill
                       style={{ objectFit: 'cover' }}

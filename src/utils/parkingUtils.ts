@@ -1,5 +1,4 @@
 import Parking from '@/models/Parking';
-import mongoose from 'mongoose';
 
 export async function updateParkingSpots(parkingId: string, increment: boolean = false) {
   try {

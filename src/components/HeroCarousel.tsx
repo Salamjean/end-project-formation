@@ -7,19 +7,19 @@ import styles from './HeroCarousel.module.css';
 const slides = [
   {
     id: 1,
-    image: '/carousel/agence.jpg',
+    image: '/carousel/pak.jpg',
     title: 'Parking Sécurisé',
     description: 'Votre voiture en sécurité 24/7'
   },
   {
     id: 2,
-    image: '/carousel/maison_ser.jpg',
+    image: '/carousel/par.jpg',
     title: 'Facile d\'accès',
-    description: 'Emplacements stratégiques en centre-ville'
+    description: 'Emplacements stratégiques'
   },
   {
     id: 3,
-    image: '/carousel/espace-de-travail-avec-ecran-d-ordinateur-et-ordinateur-portable.jpg',
+    image: '/carousel/voi.jpg',
     title: 'Tarifs compétitifs',
     description: 'Des prix adaptés à tous les budgets'
   }
