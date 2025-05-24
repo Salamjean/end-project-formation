@@ -44,7 +44,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: "Salam Jean-Louis",
     role: "Directeur Général",
-    image: "/team/ceo.jpg"
+    image: "/team/salam.png"
   },
   {
     id: 2,
