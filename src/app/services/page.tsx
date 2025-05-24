@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Car, Clock, Shield, CreditCard, Wifi, Coffee, Key, Phone } from 'lucide-react';
+import { Car, Shield, CreditCard, Coffee, Key, Phone } from 'lucide-react';
 import styles from './services.module.css';
 
 interface Service {
@@ -16,7 +16,7 @@ interface Service {
 const services: Service[] = [
   {
     id: 1,
-    title: "Stationnement Sécurisé",
+    title: "Stationnement Sécurisé et bien éclairé",
     description: "Votre véhicule est sous surveillance 24h/24 et 7j/7 avec notre système de sécurité de pointe.",
     icon: Shield,
     features: [
@@ -52,7 +52,7 @@ const services: Service[] = [
   },
   {
     id: 4,
-    title: "Services Additionnels",
+    title: "Services Additionnels qui sera bientôt disponible",
     description: "Profitez de nos services complémentaires pour un confort optimal.",
     icon: Coffee,
     features: [
